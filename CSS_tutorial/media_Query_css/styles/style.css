@@ -1,0 +1,15 @@
+p {
+	background-color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+	p {
+		background-color: orange;
+	}
+}
+
+@media print {
+	h1 {
+		display: none;
+	}
+}

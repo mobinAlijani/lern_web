@@ -1,0 +1,15 @@
+.animation_div {
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+	0% {
+		transform: translate(0, 0);
+	}
+	100% {
+		transform: translate(50px, 50px);
+	}
+}

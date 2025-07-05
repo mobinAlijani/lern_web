@@ -1,0 +1,95 @@
+/* 
+      استایل کلی فرم:
+      عرض 400px، مرکز صفحه، حاشیه، سایه و فونت
+    */
+form {
+	width: 400px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 2px solid #333;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	font-family: Arial, sans-serif;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+}
+
+/* 
+      استایل برچسب‌ها (label):
+      نمایش بلوکی برای هر برچسب تا خط جدید بیفتد،
+      کمی فاصله پایین برای جدا کردن از فیلد ورودی
+    */
+label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: bold;
+	color: #333;
+}
+
+/* 
+      استایل فیلدهای ورودی (input, textarea, select):
+      عرض کامل فرم منهای padding،
+      حاشیه ساده و کمی گوشه‌های گرد،
+      ارتفاع مناسب و فونت خوانا
+    */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+	width: 100%;
+	padding: 8px 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	box-sizing: border-box; /* مهم برای جلوگیری از بزرگ شدن عرض */
+	font-family: inherit;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+	outline: none;    /*حذف outline */
+}
+
+/* 
+      ارتفاع بیشتر برای textarea 
+    */
+textarea {
+	min-height: 80px;
+	resize: vertical; /* اجازه تغییر اندازه عمودی */
+}
+
+/* 
+      استایل دکمه ارسال فرم:
+      رنگ زمینه، رنگ متن سفید،
+      بدون حاشیه، گوشه‌های گرد،
+      تغییر رنگ پس‌زمینه در هاور
+    */
+button[type="submit"] {
+	background-color: #007bff;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	width: 100%;
+}
+
+button[type="submit"]:hover {
+	background-color: #0056b3;
+}
+
+/* 
+      برای نمایش خطا یا پیام‌ها
+    */
+.error {
+	color: red;
+	font-size: 14px;
+	margin-top: -10px;
+	margin-bottom: 15px;
+}

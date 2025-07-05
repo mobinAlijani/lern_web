@@ -1,0 +1,33 @@
+table {
+  width: 100%; /* پهنای جدول به اندازه والد */
+  border-collapse: collapse; /* ادغام حاشیه‌ها برای ظاهر بهتر */
+  /* border: 1px solid black; خط دور جدول */
+}
+
+th, td {
+  border: 1px solid black; /* خط دور هر سلول */
+  padding: 8px; /* فاصله داخلی سلول */
+  text-align: center; /* تراز وسط متن */
+}
+
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* ردیف‌های زوج رنگ پس‌زمینه روشن */
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff; /* ردیف‌های فرد سفید */
+}
+
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  overflow-x: auto;
+  display: block; /* اجازه اسکرول افقی */
+}

@@ -1,0 +1,82 @@
+body {
+	height: 3000px; /* فقط برای تست اسکرول */
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+	color: white;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.static-box {
+	background-color: gray;
+	position: static; /* موقعیت پیش‌فرض */
+}
+
+.relative-box {
+	background-color: blue;
+	position: relative;
+	top: 20px; /* نسبت به جای قبلی خودش ۲۰px پایین میاد */
+	left: 30px;
+}
+
+.absolute-box {
+	background-color: red;
+	position: absolute;
+	top: 50px; /* نسبت به والد position‌دار */
+	left: 100px;
+}
+
+.fixed-box {
+	background-color: green;
+	position: fixed;
+	top: 10px; /* همیشه ۱۰px از بالای صفحه می‌مونه */
+	right: 10px;
+}
+
+.sticky-box {
+	background-color: orange;
+	position: sticky;
+	top: 0; /* وقتی به بالای صفحه رسید، می‌چسبه */
+}
+
+.wrapper {
+	position: relative; /* برای absolute box، این والد مبنا میشه */
+	border: 2px dashed black;
+	height: 300px;
+	margin-top: 50px;
+}
+
+.container {
+	position: relative;
+	width: 300px;
+	height: 200px;
+}
+
+.box2{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	opacity: 0.9;
+}
+
+.red {
+	background-color: red;
+	z-index: 1; /* این عنصر در لایه پایین‌تره */
+}
+
+.blue {
+	background-color: blue;
+	left: 40px;
+	z-index: 2; /* این عنصر بالاتر قرار می‌گیره */
+}
+
+.green {
+	background-color: green;
+	left: 60px;
+	z-index: 3; /* بالاتر از همه قرار می‌گیره */
+}

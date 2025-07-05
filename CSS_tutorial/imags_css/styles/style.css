@@ -1,0 +1,13 @@
+body {
+	background-image: url(../imags/green-dark-color-leaves-r8nzoix5evxnl13l.jpg);
+	background-repeat: no-repeat; /*repeat-x  repeat-y */
+	height: 100vh;
+	background-attachment: fixed;
+}
+img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	opacity: 1;
+	filter: drop-shadow();
+}

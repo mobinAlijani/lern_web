@@ -1,0 +1,21 @@
+* {
+  color: red;    /*1*/
+}
+
+p {
+  color: blue;    /*2*/
+}
+
+.class_test {
+  color: yellow;    /*3*/
+}
+
+#id_test {
+  color: aqua;    /*4*/
+}
+
+*{
+  color: pink !important; /*6*/
+}
+
+

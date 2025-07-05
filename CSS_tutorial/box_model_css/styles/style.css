@@ -1,0 +1,17 @@
+.container {
+  background-color: gray; /* رنگ پس‌زمینه خاکستری */
+  display: flex;          /* فعال‌سازی فلکس‌باکس */
+  justify-content: center; /* مرکز کردن افقی محتوای داخلی */
+  align-items: center;     /* مرکز کردن عمودی محتوای داخلی */
+}
+
+.box {
+  background-color: yellow; /* رنگ پس‌زمینه زرد */
+  width: 300px;             /* عرض ثابت */
+  height: 380px;            /* ارتفاع ثابت */
+  padding: 10px;            /* فاصله داخلی محتوا تا مرز جعبه */
+  border: 10px solid;       /* حاشیه 10 پیکسلی ضخیم و توپر (رنگ پیش‌فرض سیاه) */
+  margin: 10px;             /* فاصله خارجی جعبه نسبت به عناصر دیگر */
+  /* box-sizing: content-box; */ /* حالت پیش‌فرض که اندازه شامل padding و border نیست */
+  box-sizing: border-box;    /* حالت بهینه که اندازه کل جعبه شامل padding و border هم می‌شود */
+}

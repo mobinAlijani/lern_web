@@ -1,0 +1,7 @@
+.shadow {
+	/* offset-x | offset-y | blur-radius | color */
+	text-shadow: 2px 2px 5px black;
+	/* Four length values and a color */
+	/* <length> | <length> | <length> | <length> | <color> */
+	box-shadow: 5px 5px 5px 5px black;
+}

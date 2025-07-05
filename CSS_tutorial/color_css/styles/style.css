@@ -1,0 +1,9 @@
+p {
+  background-color: #ff23fd; /* رنگ پس‌زمینه بنفش روشن */
+  color: whitesmoke; /* رنگ متن سفید روشن */
+}
+
+h1 {
+  color: rgb(100, 11, 100); /* رنگ متن بنفش */
+  background: linear-gradient(red, pink); /* گرادینت (تدریجی) از قرمز به صورتی */
+}

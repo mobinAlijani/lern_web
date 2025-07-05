@@ -1,0 +1,169 @@
+div {
+	margin: 100px;
+	transition: 2s;
+	cursor: pointer;
+}
+
+.translate {
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+}
+
+.translate:hover {
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	transform: translate(50px, 50px);
+}
+
+.translateX {
+	width: 100px;
+	height: 100px;
+	background-color: skyblue;
+}
+
+.translateX:hover {
+	width: 100px;
+	height: 100px;
+	background-color: skyblue;
+	transform: translateX(50px);
+}
+
+.translateY {
+	width: 100px;
+	height: 100px;
+	background-color: tomato;
+}
+
+.translateY:hover {
+	width: 100px;
+	height: 100px;
+	background-color: tomato;
+	transform: translateY(50px);
+}
+
+.rotate {
+	width: 100px;
+	height: 100px;
+	background-color: purple;
+}
+.rotate:hover {
+	width: 100px;
+	height: 100px;
+	background-color: purple;
+	transform: rotate(45deg);
+}
+
+.rotateX {
+	width: 100px;
+	height: 100px;
+	background-color: teal;
+}
+.rotateX:hover {
+	width: 100px;
+	height: 100px;
+	background-color: teal;
+	transform: rotateX(180deg);
+}
+
+.rotateY {
+	width: 100px;
+	height: 100px;
+	background-color: coral;
+}
+
+.rotateY:hover {
+	width: 100px;
+	height: 100px;
+	background-color: coral;
+	transform: rotateY(180deg);
+}
+
+.scale {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+
+.scale:hover {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	transform: scale(1.5, 1.5);
+}
+
+.scaleX {
+	width: 100px;
+	height: 100px;
+	background-color: skyblue;
+}
+
+.scaleX:hover {
+	width: 100px;
+	height: 100px;
+	background-color: skyblue;
+	transform: scaleX(2);
+}
+
+.scaleY {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+}
+
+.scaleY:hover {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	transform: scaleY(0.5);
+}
+
+.skew {
+	width: 100px;
+	height: 100px;
+	background-color: gray;
+}
+.skew:hover {
+	width: 100px;
+	height: 100px;
+	background-color: gray;
+	transform: skew(30deg, 45deg);
+}
+
+.skewX {
+	width: 100px;
+	height: 100px;
+	background-color: tomato;
+}
+
+.skewX:hover {
+	width: 100px;
+	height: 100px;
+	background-color: tomato;
+	transform: skewX(30deg);
+}
+
+.skewY {
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+}
+.skewY:hover {
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+	transform: skewY(45deg);
+}
+
+.matrix {
+	width: 100px;
+	height: 100px;
+	background-color: brown;
+}
+.matrix:hover {
+	width: 100px;
+	height: 100px;
+	background-color: brown;
+	transform: matrix(1, -0.3, 5, 1, 5, 5);
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>فرم‌ها در HTML و CSS</title>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="stylesheet" href="./styles/normalize.css" />
+	</head>
+	<body>
+		<form action="#" method="post">
+			<!--
+      برچسب برای فیلد نام کاربر
+      'for' با id فیلد ورودی تطابق دارد تا وقتی روی متن کلیک شود، فیلد فعال شود
+    -->
+			<label for="username">نام کاربری:</label>
+			<input
+				type="text"
+				id="username"
+				name="username"
+				placeholder="نام کاربری خود را وارد کنید"
+				required
+				minlength="3"
+				maxlength="20"
+				autocomplete="username"
+			/>
+			<!-- 
+      توضیح: 
+      required : اجباری بودن پر کردن فیلد 
+      minlength و maxlength : محدودیت طول متن 
+      autocomplete : پیشنهاد پر کردن خودکار از مرورگر
+    -->
+
+			<label for="email">ایمیل:</label>
+			<input
+				type="email"
+				id="email"
+				name="email"
+				placeholder="ایمیل خود را وارد کنید"
+				required
+				autocomplete="email"
+			/>
+			<!--
+      نوع ایمیل باعث می‌شود که مرورگر چک کند ایمیل صحیح باشد
+    -->
+
+			<label for="password">رمز عبور:</label>
+			<input
+				type="password"
+				id="password"
+				name="password"
+				placeholder="رمز عبور خود را وارد کنید"
+				required
+				minlength="6"
+			/>
+			<!--
+      type=password باعث می‌شود متن وارد شده مخفی شود (نقاط یا ستاره) 
+    -->
+
+			<label for="age">سن:</label>
+			<input
+				type="number"
+				id="age"
+				name="age"
+				placeholder="سن خود را وارد کنید"
+				min="1"
+				max="120"
+			/>
+			<!--
+      نوع number باعث می‌شود فقط عدد وارد شود و همچنین می‌توان محدوده تعیین کرد
+    -->
+
+			<label for="gender">جنسیت:</label>
+			<select id="gender" name="gender" required>
+				<option value="">انتخاب کنید</option>
+				<option value="male">مرد</option>
+				<option value="female">زن</option>
+				<option value="other">دیگر</option>
+			</select>
+			<!-- 
+      المان select برای ایجاد لیست کشویی است
+    -->
+
+			<label for="bio">درباره خودتان:</label>
+			<textarea
+				id="bio"
+				name="bio"
+				placeholder="چند خط درباره خودتان بنویسید"
+			></textarea>
+			<!--
+      textarea برای نوشتن متن بلندتر چند خطی است
+    -->
+
+			<button type="submit">ارسال فرم</button>
+		</form>
+	</body>
+</html>

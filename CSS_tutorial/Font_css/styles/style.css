@@ -1,0 +1,28 @@
+/* all font type 
+
+serif
+
+sans-serif
+
+monospace 
+
+cursive
+
+fantasy */
+
+@font-face {
+	font-family: "vazir";
+	src: url(../fons/Vazirmatn-VariableFont_wght.ttf);
+}
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+}
+
+.font_h {
+	font-family: "vazir";
+	font-weight: 800;
+	line-height: 40px;
+	direction: rtl;
+}

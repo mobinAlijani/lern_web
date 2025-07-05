@@ -1,0 +1,31 @@
+p {
+  border-style: dashed;           /* نوع خط حاشیه: خط‌چین */
+  border-width: 5px;              /* ضخامت حاشیه: ۵ پیکسل */
+  border-color: green;            /* رنگ حاشیه: سبز */
+  
+  outline: 2px solid orange;      /* خط دور خارجی: ۲ پیکسل، خط صاف، نارنجی */
+  outline-offset: 3px;            /* فاصله خط خارجی (outline) از border: ۳ پیکسل */
+}
+
+
+/* +----------------------------+   ← outline (نارنجی، بیرونی)
+|   +--------------------+   |   ← border (سبز، خط‌چین)
+|   |  متن پاراگراف اینجاست  |
+|   +--------------------+   |
++----------------------------+ */
+
+
+
+/* نحوه تعریف حاشیه (border):
+element {
+  border-style: solid | dashed | dotted | double | none;
+  border-width: 1px;
+  border-color: blue;
+}
+
+/* نحوه تعریف outline: 
+element {
+  outline: 2px dashed red;
+  outline-offset: 4px;
+} 
+*/

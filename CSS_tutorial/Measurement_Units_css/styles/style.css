@@ -1,0 +1,23 @@
+/* Measurement Units
+
+|   Absolute    |	Relative	|
+---------------------------------
+|	cm			|	rem	=> 16px |
+
+|	mm 			|	em			|
+
+|	px			|	%			| 
+*/
+
+.test1 {
+	font-size: 20px;
+}
+
+.test2 {
+	font-size: 1em; /* 20px  */
+}
+
+h1 {
+	font-size: 2rem; /* 32px */
+}
+

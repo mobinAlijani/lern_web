@@ -1,0 +1,31 @@
+p {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* a:visited {
+	color: orange;
+}
+
+a:hover {
+	color: green;
+}
+
+a:active {
+	color: black;
+} */
+
+a:link,
+a:visited {
+	color: white;
+	background-color: gray;
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+a:hover {
+	background-color: skyblue;
+}

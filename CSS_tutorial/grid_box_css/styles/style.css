@@ -1,0 +1,64 @@
+/* .container {
+	display: grid; /* فعال کردن سیستم گرید 
+	grid-template-columns: 1fr 1fr 1fr; /* سه ستون مساوی 
+	grid-template-rows: auto; /* ردیف‌ها با اندازه خودکار 
+	gap: 10px; /* فاصله بین سلول‌ها 
+} */
+
+/* .item {
+	background-color: lightgray;
+	border: 1px solid #ccc;
+	padding: 20px;
+	text-align: center;
+} */
+
+/* .item1 {
+	grid-column: 1 / span 2;  از ستون ۱ شروع شود و دو ستون را بگیرد 
+} */
+
+/* .item2 {
+	grid-row: 2 / 4;  از ردیف ۲ شروع شود تا ردیف ۴ 
+} */
+
+.container {
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"sidebar content content"
+		"footer footer footer";
+	/* تقسیم صفحه به 3 ستون:
+         ستون اول → 1fr یعنی 1 سهم
+         ستون دوم → 2fr یعنی 2 سهم (دو برابر ستون اول)
+         ستون سوم → 1fr یعنی 1 سهم
+
+         مجموع کل سهم‌ها = 4
+         پس فضای صفحه به صورت نسبی تقسیم می‌شود:
+         - ستون اول = 25%
+         - ستون دوم = 50%
+         - ستون سوم = 25%
+      */
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: auto 1fr auto;
+	gap: 10px;
+}
+
+.header {
+	grid-area: header;
+	background-color: antiquewhite;
+	border: solid 1px #ccc;
+}
+.sidebar {
+	grid-area: sidebar;
+	background-color: lightgray;
+	border: solid 1px #ccc;		
+}
+.content {
+	grid-area: content;
+	background-color: skyblue;
+	border: solid 1px #ccc;				
+}
+.footer {
+	grid-area: footer;
+	background-color: antiquewhite;
+	border: solid 1px #ccc;
+}
