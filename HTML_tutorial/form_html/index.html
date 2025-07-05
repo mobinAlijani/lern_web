@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form html</title>
+  </head>
+  <body>
+    <!-- فرم HTML برای دریافت اطلاعات کاربر -->
+    <form action="">
+      <!-- فیلد ورودی برای نام -->
+      <label for="ferst_name">Ferst name</label>
+      <input
+        type="text"
+        name="ferst_name"
+        placeholder="Frest name"
+        id="ferst_name"
+      />
+      <br />
+
+      <!-- فیلد ورودی برای نام خانوادگی - دارای ویژگی required -->
+      <label for="last_name">Last name </label>
+      <input
+        type="text"
+        name="last_name"
+        placeholder="Last name"
+        id="last_name"
+        required
+      />
+      <br />
+
+      <!-- بخش انتخاب جنسیت با radio button -->
+      <fieldset>
+        <legend>gander</legend>
+        <label for="male">man</label>
+        <input type="radio" name="gander" id="male" />
+        <label for="female">woman</label>
+        <input type="radio" name="gander" id="female" />
+      </fieldset>
+
+      <!-- انتخاب عضویت در خبرنامه با checkbox -->
+      <label for="newsletter">newsletter</label>
+      <input type="checkbox" name="newsletter" id="newsletter" />
+      <br />
+
+      <!-- ورودی برای ایمیل با نوع email -->
+      <input
+        type="email"
+        name="email_user"
+        id="email_user"
+        placeholder="you'r email"
+      />
+      <br />
+
+      <!-- ورودی برای پسورد -->
+      <input
+        type="password"
+        name="password_user"
+        id="password_user"
+        placeholder="your password"
+      />
+      <br />
+
+      <!-- ورودی برای شماره تماس -->
+      <input
+        type="tel"
+        name="tel_user"
+        id="tel_user"
+        placeholder="your tel number"
+      />
+      <br />
+
+      <!-- ورودی برای آدرس وب‌سایت -->
+      <input
+        type="url"
+        name="web_url"
+        id="web_url"
+        placeholder="your url webSite"
+      />
+      <br />
+
+      <!-- ورودی عددی با بازه مشخص -->
+      <input
+        type="number"
+        name="number"
+        id="number"
+        min="0"
+        max="100"
+        placeholder="your number"
+      />
+      <br /><br />
+
+      <!-- textarea برای نوشتن متن -->
+      <textarea name="" id="" rows="5" cols="15"></textarea>
+
+      <!-- ورودی برای انتخاب تاریخ -->
+      <input type="date" name="" id="" />
+      <br />
+
+      <!-- انتخاب رنگ، محدوده و فایل -->
+      <input type="color" name="" id="" />
+      <input type="range" name="" id="" max="10" min="1" step="1" />
+      <input type="file" name="" id="" multiple />
+      <br />
+
+      <!-- منوی کشویی select -->
+      <select name="" id="">
+        <option value="iran">iran</option>
+        <option value="iraq">iraq</option>
+        <option value="us">us</option>
+      </select>
+
+      <!-- ورودی با پیشنهادهای datalist -->
+      <input type="text" name="" list="country" id="" />
+      <datalist id="country">
+        <option value="iran">iran</option>
+        <option value="iraq">iraq</option>
+        <option value="us">us</option>
+      </datalist>
+      <br />
+
+      <!-- دکمه‌های ارسال و ریست فرم -->
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
+    </form>
+  </body>
+</html>

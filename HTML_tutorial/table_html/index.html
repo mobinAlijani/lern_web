@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+
+    <style>
+      /* استایل‌دهی به جدول */
+      table {
+        border-collapse: collapse; /* حذف فاصله بین خطوط جدول */
+      }
+
+      /* استایل عنوان‌های ستون (th) */
+      th {
+        border: solid 1px black; /* حاشیه برای سلول‌های عنوان */
+        padding: 8px;
+        background-color: #eee;
+      }
+
+      /* استایل خانه‌های معمولی جدول (td) */
+      td {
+        border: solid 1px black; /* حاشیه مشکی برای خانه‌ها */
+        text-align: center;      /* قرارگیری متن وسط */
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- جدول اطلاعات کاربران -->
+    <table>
+      <!-- عنوان جدول -->
+      <thead>
+        <tr>
+          <th>Number</th> <!-- شماره ردیف -->
+          <th>Name</th>   <!-- نام کاربر -->
+          <th>Age</th>    <!-- سن کاربر -->
+          <th>Email</th>  <!-- ایمیل کاربر -->
+        </tr>
+      </thead>
+
+      <!-- محتوای اصلی جدول -->
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Mobin</td>
+          <td>18</td>
+          <td>mobin@gmail.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ali</td>
+          <td>38</td>
+          <td>ali@gmail.com</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Sora</td>
+          <td>10</td>
+          <td>sora@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
